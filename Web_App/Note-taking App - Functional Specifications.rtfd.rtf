@@ -1,0 +1,709 @@
+{\rtf1\ansi\deff3\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq2\fcharset0 .PingFangSC-Regular;}{\f5\froman\fprq2\fcharset0 .SFUI-Regular;}{\f6\froman\fprq2\fcharset0 HelveticaNeue;}{\f7\froman\fprq2\fcharset0 .AppleColorEmojiUI;}{\f8\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f9\fnil\fprq2\fcharset0 Noto Sans CJK SC;}{\f10\fswiss\fprq0\fcharset128 Noto Sans Devanagari;}{\f11\fnil\fprq2\fcharset0 Noto Sans Devanagari;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet{\s0\snext0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052 Normal;}
+{\s15\sbasedon0\snext16\rtlch\af11\afs28 \ltrch\hich\af8\loch\sb240\sa120\keepn\f8\fs28\dbch\af9 Heading;}
+{\s16\sbasedon0\snext16\loch\sl276\slmult1\sb0\sa140 Body Text;}
+{\s17\sbasedon16\snext17\rtlch\af10 \ltrch\loch\sl276\slmult1\sb0\sa140 List;}
+{\s18\sbasedon0\snext18\rtlch\af10\afs24\ai \ltrch\loch\sb120\sa120\noline\fs24\i Caption;}
+{\s19\sbasedon0\snext19\rtlch\af10 \ltrch\loch\noline Index;}
+}{\*\generator LibreOffice/24.2.7.2$Linux_X86_64 LibreOffice_project/420$Build-2}{\info{\creatim\yr0\mo0\dy0\hr0\min0}{\revtim\yr2026\mo1\dy16\hr16\min47}{\printim\yr0\mo0\dy0\hr0\min0}}{\*\userprops}\deftab560
+\hyphauto1\viewscale166\formshade\paperh15840\paperw12240\margl1440\margr1440\margt1440\margb1440\sectd\sbknone\sftnnar\saftnnrlc\sectunlocked1\pgwsxn12240\pghsxn15840\marglsxn1440\margrsxn1440\margtsxn1440\margbsxn1440\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+{\*\ftnsep\chftnsep}\pgndec\pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+Note-taking App - Functional Specifications}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af7\loch\cf0\fs28\f7
+\uc0 \u55357\uc1 \u56523\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+Key Features}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+1. Management of Notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Creation of new notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Real-time editing with auto-savegarde}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Deletion with confirmation}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Archiving notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Duplicate of existing notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Full text search}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Filtering by tags, dates, extension}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Sort by date, title, file type}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+2. Supported Formats}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Markdown (.md) - Editor with live preview}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Raw text (.txt) - Minimalist editor}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 HTML (.html) - Editor with HTML preview}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Rich Text (.doc/.docx) - Publisher WYSIWYG}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 JSON (.json) - For structured notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 PDF (.pdf) - Generation and visualization}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Other formats (future extension)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+3. Smart Editor}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Edit/preview mode for Markdown}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Syntax highlighting according to the format}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Contextual toolbar}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Self-completion for Markdown}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Drag & drop images/files}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Integrated emoji picker}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Automatic links}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Bulleted lists/numbering}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Interactive checklists}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Easily editable tables}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+4. Organisation}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Customizable tags/categories}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Hierarchical files/collections}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Favorite notes (stars)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Notes pinned on the dashboard}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Smart filters:}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Recent notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Recently modified notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Notes without tags}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Notes by project}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+5. Backup & Export}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Local automatic backup (IndexedDB/LocalStorage)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Synchronization via backend (optional)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Export multiple formats:}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Single download}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Export batch (several notes)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Conversion between formats}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Automatic backup (cloud/local)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+6. User Interface}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Themes: light/dark/automatic}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Focus mode (full screen for editing)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Adjustable layout (resizable panels)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Responsive mobile/tablet/desktop interface}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Customizable keyboard shortcuts}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 History of modifications (undo/redo)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Backup Status Indicator}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+7. Advanced Features}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Predefined models:}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Meeting notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Task list}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Course notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Daily newspaper}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Advanced search:}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Search in content}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Search by metadata}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Regular expressions}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Internal links between notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Collaboration (future extension)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Versioning of notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+8. File Management}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Import from:}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Local files}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Clipboard}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 URL (web conversion \u8594\'3f markdown)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Export to:}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Individual files}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 ZIP archives (multiple files)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Direct printing}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Preview before export}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+9. Dashboard }{\hich\af5\loch\cf0\fs28\f5\loch
+(For example in a kind of graphics)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Statistics:}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Number of notes by type}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Recent activity}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Used storage space}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Quick notes (widget)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Saved searches}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Most used tags}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+10. Personalization}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Customizable templates}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Configurable shortcuts}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Extensions/plugins (modular system)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Default export settings}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Custom filters}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+11. Security & Confidentiality}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Optional encryption of grades}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Password by note/folder}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Secure cache}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Local data optional cleaning}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+12. Productivity}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Distract-free mode}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Variable templates (date, time, auto ID)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Reusable code snippets}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Integration with external tools (future extension)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af7\loch\cf0\fs28\f7
+\uc0 \u55357\uc1 \u57056\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+Recommended Technical Stack}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+Frontend (React + Fast)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 React 18+ with TypeScript}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Fast for build and HMR}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Overall condition: Zustand or Redux Toolkit}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Routing: React Router v6}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Text editor: TipTap or CodeMirror}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 UI Components: shadcn/ui or MUI}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Icons: Lucide React}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Markdown rendering: React Markdown}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 PDF generation: jsPDF or pdf-lib}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 DOCX manipulation: docx or mammoth.js}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Manipulation table: xlsx for conversions}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+Storage}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Local: IndexedDB (via Dexie.js)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Synchronization: Firebase/Supabase optional}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Files: File System Access API}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+Others}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Highlighting code: Prism.js or Highlight.js}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Drag & drop: @dnd-kit}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Dates: date-fns}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+\u183\'b7 Validation: Zod}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af7\loch\cf0\fs28\f7
+\uc0 \u55357\uc1 \u56513\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+Project Structure}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+```}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+Src/}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+components/}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5
+\u9474\'3f }{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+editor/ # Publishing components}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5
+\u9474\'3f }{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+sidebar/ # Navigation}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5
+\u9474\'3f }{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+notes-list/ # List of notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5
+\u9474\'3f }{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+preview/ # Preview}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5
+\u9474\'3f }{\hich\af6\loch\cf0\fs28\f6
+\u9492\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+ui/ # Generic components}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+features/}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5
+\u9474\'3f }{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+notes/ # Logic of notes}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5
+\u9474\'3f }{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+editor/ # Editor management}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5
+\u9474\'3f }{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+export/ # Export functions}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5
+\u9474\'3f }{\hich\af6\loch\cf0\fs28\f6
+\u9492\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+import/ # Import functions}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+services/}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5
+\u9474\'3f }{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+storage/ # Storage management}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5
+\u9474\'3f }{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+export/ # Export services}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5
+\u9474\'3f }{\hich\af6\loch\cf0\fs28\f6
+\u9492\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+converters/ # Conversion formats}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+types/ # Types TypeScript}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af4\loch\cf0\fs28\f4
+\u9500\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+utilities/ # Utilities}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af6\loch\cf0\fs28\f6
+\u9492\'3f\u9472\'3f\u9472\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+hooks/ # Personalized hooks}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+```}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af7\loch\cf0\fs28\f7
+\uc0 \u55357\uc1 \u56960\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+Minimum Deliverables (MVP)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+1. Markdown editor with preview}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+2. List of notes with basic CRUD}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+3. Local backup (IndexedDB)}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+4. Export Markdown/TXT}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+5. Basic responsive interface}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af7\loch\cf0\fs28\f7
+\uc0 \u55357\uc1 \u56580\'3f}{\hich\af5\loch\cf0\fs28\f5
+ }{\hich\af5\loch\cf0\fs28\f5\loch
+User Type Workflow}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+1. Creation: New note \u8594\'3f Format choice \u8594\'3f Edition}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+2. Edition: Auto-save \u8594\'3f Preview}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+3. Organization: Tags \u8594\'3f Folders \u8594\'3f Favorites}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+4. Export: Format selection \u8594\'3f Download}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+5. Search: Filters \u8594\'3f Text search \u8594\'3f Results}
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar\hich\af5\loch\cf0\fs28\f5\loch
+
+\par \pard\plain \s0\rtlch\af11\afs24\alang1081 \ltrch\lang1033\langfe2052\hich\af3\loch\nowidctlpar\hyphpar0\ltrpar\cf0\f3\fs24\lang1033\kerning1\dbch\af12\langfe2052\ql\ltrpar{\hich\af5\loch\cf0\fs28\f5\loch
+This application can evolve into a complete personal knowledge management (PKM) tool. Do you want me to detail a specific feature or propose a more detailed technical architecture?}
+\par }
